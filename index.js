@@ -4,8 +4,7 @@ function takeANumber(katzDeliLine, name) {
 }
 
 function nowServing(katzDeliLine) {
-  var place = katzDeliLine.length;
-  if (place > 0) {
+  if (katzDeliLine.length > 0) {
     var serving = katzDeliLine.slice(0,1);
     katzDeliLine.shift();
     return "Currently serving " + serving + ".";
