@@ -1,5 +1,4 @@
 var katzDeliLine = [];
-var noLine = "There is nobody waiting to be served!";
 
 function takeANumber(katzDeliLine, name) {
   katzDeliLine.push(name);
@@ -13,7 +12,7 @@ function nowServing(katzDeliLine) {
     katzDeliLine.shift();
     return "Currently serving " + serving + ".";
   } else {
-    return noLine;
+    return "There is nobody waiting to be served!";
   }
 }
 
