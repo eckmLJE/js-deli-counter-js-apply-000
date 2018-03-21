@@ -3,9 +3,7 @@ var noLine = "There is nobody waiting to be served!";
 
 function takeANumber(katzDeliLine, name) {
   katzDeliLine.push(name);
-  var place = katzDeliLine.length;
-  var welcome = "Welcome, " + name + ". You are number " + place + " in line.";
-  return welcome;
+  return "Welcome, " + name + ". You are number " + katzDeliLine.length + " in line.";
 }
 
 function nowServing(katzDeliLine) {
